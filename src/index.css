@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Noto-Serif';
+  src: local('Noto-Serif'), url(./fonts/Noto_Serif/NotoSerif-Regular.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+  /* height: 100vh;
+  width: 100vw;  */
+
+   height: 100vh;
+  width: 100vw; 
+  /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',*/
+  /*  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',*/
+  /*  sans-serif;*/
+
+  font-family: Noto-Serif,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(20,82,119);
+  background: linear-gradient(45deg, rgba(20,82,119,1) 35%, rgba(131,208,203,1) 95%);
+  /*background-repeat: no-repeat;*/
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.container .row .col div div {
+  font-family: Noto-Serif,sans-serif;
+}
+
+code {
+  /*font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',*/
+  /*  monospace;*/
+  font-family: Noto-Serif,sans-serif;
+  color: rgba(0, 0, 0, 0.65);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: red;
+}
+.hover-overlay {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+.hover-overlay:hover .overlay {
+  opacity: .7;
+}
